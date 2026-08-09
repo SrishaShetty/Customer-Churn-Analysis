@@ -1,20 +1,23 @@
 # Customer Churn Analysis
 
-A customer churn analysis project using Python, SQL, Excel, and Power BI to identify customer churn patterns, analyze high-risk customer segments, and understand factors affecting customer retention.
+Customer churn analysis project using Python and SQL to understand customer churn patterns, identify high-risk customers, and find factors that may affect customer retention.
 
 ## Features
 
-- Cleaned and prepared customer churn data
-- Performed exploratory data analysis using Python
-- Analyzed churn by contract type, tenure, internet service, and payment method
-- Calculated overall and segment-level churn rates
-- Used SQL for customer and revenue analysis
-- Identified high-risk customer segments
-- Estimated monthly revenue at risk
-- Created a customer churn dashboard in Power BI
-- Developed customer retention recommendations
+- Data cleaning and preparation
+- Exploratory data analysis
+- Churn rate analysis
+- Churn analysis by contract type
+- Churn analysis by customer tenure
+- Churn analysis by monthly charges
+- Churn analysis by internet service
+- Churn analysis by payment method
+- Customer risk segmentation
+- SQL-based customer analysis
+- Revenue-at-risk analysis
+- Export of cleaned customer data
 
-## Tools & Technologies
+## Tools Used
 
 - Python
 - Pandas
@@ -23,32 +26,22 @@ A customer churn analysis project using Python, SQL, Excel, and Power BI to iden
 - Seaborn
 - SQL
 - SQLite
-- Excel
-- Power BI
+- Jupyter Notebook
 
 ## Analysis
 
-The analysis focuses on understanding which customer groups are more likely to churn and the factors associated with customer attrition.
+The project analyzes customer data to understand customer churn patterns and identify customer groups that may be more likely to leave a telecom service.
 
-Key areas analyzed include:
+The analysis focuses on:
 
+- Overall churn rate
 - Contract type
 - Customer tenure
 - Monthly charges
 - Internet service
 - Payment method
+- Senior citizen status
 - Customer risk segments
-
-## Dashboard
-
-The project includes a Power BI dashboard showing:
-
-- Overall churn rate
-- Churn by contract type
-- Customer risk segments
-- Churn by tenure
-- Churn by internet service
-- Churn by payment method
 
 ## Customer Risk Segmentation
 
@@ -58,28 +51,34 @@ Customers were classified into three risk groups using business rules based on c
 - Medium Risk
 - Low Risk
 
-The segmentation can help identify customers who may require targeted retention campaigns.
+This segmentation helps identify customers who may require targeted retention efforts.
 
-## Business Recommendations
+## SQL Analysis
 
-Based on the analysis, retention efforts can focus on:
+SQL queries were used to analyze:
 
-- Customers on month-to-month contracts
-- New customers with short tenure
-- Customers with higher monthly charges
-- Fiber optic customers showing higher churn risk
-- Customers identified as high-risk
+- Overall churn rate
+- Churn by contract type
+- High-risk customers
+- Revenue at risk
+- Churn by customer type
 
-Possible actions include targeted offers, contract upgrades, personalized retention campaigns, and improved customer engagement.
+SQLite was used to create and analyze the customer database.
+
+## Key Business Insights
+
+The analysis helps identify customer groups with higher churn risk, particularly customers with shorter tenure and month-to-month contracts.
+
+The results can be used to support customer retention strategies such as targeted offers, contract upgrades, and personalized retention campaigns.
 
 ## Project Files
 
-- `churn_analysis.py` — Python analysis and SQL queries
-- `churn_cleaned.csv` — Cleaned dataset with risk segments
-- `customer churn dashboard.png` — Customer churn dashboard
-- `Customer Churn Analysis Retention Strategy.docx` — Retention strategy document
+- `churn_analysis.ipynb` — Complete Python, EDA, and SQL analysis
+- `churn_cleaned.csv` — Cleaned customer dataset with risk segments
+- `README.md` — Project documentation
 
 ## Dataset
 
-The analysis uses the Telco Customer Churn dataset.
-The original dataset contains customer information such as demographics, services, contract details, tenure, monthly charges, and churn status.
+The dataset used in this project is the **Telco Customer Churn dataset**, available on Kaggle. Search for **"Telco Customer Churn"** on Kaggle.
+
+The raw dataset is not included in this repository.
